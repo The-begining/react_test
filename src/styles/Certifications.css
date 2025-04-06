@@ -1,0 +1,12 @@
+.certifications {
+    padding: 3rem;
+    background-color: #f4f4f4;
+  }
+  .certifications h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .certifications ul li {
+    margin-bottom: 0.8rem;
+  }
+  

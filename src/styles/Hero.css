@@ -1,0 +1,77 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 800px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #aad8d3;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 0.8rem 1.6rem;
+  background-color: #00c6ff;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #009ee3;
+  transform: scale(1.05);
+}
+.final-titles {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.title-badge {
+  background: #00c6ff;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #fff;
+  animation: fadeInBadge 0.4s ease-in;
+}
+
+@keyframes fadeInBadge {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,25 @@
+.profile{
+  border: 2px solid blueviolet;
+  height: 400px;
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.dark {
+  background-color: #0d1117;
+  color: #ffffff;
+}
+
+.dark .navbar {
+  background-color: #161b22;
+}
+
+.toggle-btn {
+  margin-left: 1rem;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 1.3rem;
+  cursor: pointer;
+}

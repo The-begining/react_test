@@ -1,0 +1,13 @@
+.projects {
+    padding: 3rem;
+    background-color: #fff;
+  }
+  .projects h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .projects ul li {
+    margin-bottom: 1rem;
+  }
+
+  

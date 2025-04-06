@@ -1,0 +1,30 @@
+.contact {
+    padding: 3rem;
+    background-color: #e1f5fe;
+  }
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .contact .links {
+    margin-top: 1rem;
+  }
+  .contact .links a {
+    margin-right: 1.5rem;
+    color: #0077cc;
+    text-decoration: none;
+  }
+  .contact .links a:hover {
+    text-decoration: underline;
+  }
+  
+  .github-widget {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .github-widget img {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+  

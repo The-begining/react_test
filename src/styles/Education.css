@@ -1,0 +1,13 @@
+.education {
+    padding: 3rem;
+    background-color: #fff;
+  }
+  .education h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .education ul li {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
