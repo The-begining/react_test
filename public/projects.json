@@ -1,0 +1,76 @@
+    [
+        {
+            "title": "Sentiment Analysis on Amazon Reviews",
+            "description": "Compared performance of LSTM, BERT, and a custom Transformer model for binary sentiment classification on Amazon product reviews.",
+            "techStack": ["LSTM", "BERT", "Transformer", "FastText", "Preprocessing"],
+            "achievements": [
+            "LSTM reached ~92% accuracy on raw data",
+            "BERT scored 97% training / 94% validation on FastText dataset",
+            "Used lemmatization, stopword removal, and tokenization",
+            "Evaluated with F1-score, confusion matrix, and validation curves"
+            ],
+            "link": "https://github.com/The-begining/sentimentAnalysis_amazonreview.git"
+        },
+        {
+            "title": "Project Canario – DevOps Infrastructure Transformation",
+            "description": "Led the design and implementation of a modern DevOps pipeline to address operational inefficiencies for a celebrity-focused web design agency.",
+            "techStack": ["Docker", "GitLab CI/CD", "OpenStack", "Unleash", "Shell", "Linux"],
+            "achievements": [
+            "Automated testing and production releases using GitLab pipelines",
+            "Enabled zero-downtime deployments with Docker Swarm",
+            "Configured feature toggling using Unleash",
+            "Developed a transitional roadmap for DevOps adoption",
+            "Promoted best practices in resilience, monitoring, and knowledge sharing"
+            ],
+            "link": "https://gitlab.cs.oslomet.no/shsin5910/project%20canario.git"
+        },
+        {
+            "title": "Drought Forecasting Using Weather Data in the US",
+            "description": "Built a machine learning model to predict drought severity based on 20 years of time-series weather and soil data across US counties.",
+            "techStack": ["Python", "Pandas", "Scikit-learn", "PCA", "Ridge Regression", "Random Forest"],
+            "achievements": [
+            "Performed PCA to reduce dimensionality while preserving 97% of variance",
+            "Achieved 63.76% accuracy using Ridge Regression",
+            "Visualized elevation-drought correlation across regions",
+            "Suggested ensemble models and time-windowed forecasts to improve accuracy"
+            ],
+            "link": "https://www.kaggle.com/datasets/cdminix/us-drought-meteorological-data"
+        },
+        {
+            "title": "3D Geometry with NeRF and Depth Estimation",
+            "description": "Built a hybrid pipeline using Neural Radiance Fields (NeRF), MiDaS, and PyTorch3D for 3D reconstruction and volumetric mesh extraction.",
+            "techStack": ["NeRF", "MiDaS", "PyTorch3D", "Open3D", "Marching Cubes"],
+            "achievements": [
+            "Generated accurate 3D meshes using depth maps and radiance fields",
+            "Integrated MiDaS for dense depth estimation",
+            "Explored trade-offs between implicit and explicit 3D rendering",
+            "Real-time mesh interaction and camera control"
+            ],
+            "link": "https://github.com/The-begining/nerf_based_mesh_extraction.git"
+        },
+        {
+            "title": "Emotion Recognition with Live Camera Feed",
+            "description": "Developed a CNN-based facial emotion recognition system integrated with real-time webcam feed for detecting 7 common emotions.",
+            "techStack": ["CNN", "OpenCV", "PyTorch", "Data Augmentation", "F1-score"],
+            "achievements": [
+            "Trained on 36,000 grayscale images with balanced class weighting",
+            "Live integration with webcam and real-time inference",
+            "Hyperparameter tuning with 100+ epochs",
+            "Optimized for F1-score across multiple emotion classes"
+            ],
+            "link": "https://github.com/TerjeOtsa/group-4-exam-ACIT4620"
+        },
+        {
+            "title": "React Portfolio Website",
+            "description": "Developed a dynamic React-based portfolio website to showcase machine learning, DevOps, and frontend development projects.",
+            "techStack": ["React", "Framer Motion", "CSS Modules", "JSON API", "Dark Mode Toggle", "Typewriter"],
+            "achievements": [
+            "Integrated project data dynamically from a structured JSON API",
+            "Implemented dark mode toggle and typewriter effects for the hero section",
+            "Used Framer Motion for animated scroll and hover transitions",
+            "Modular design supports easy future additions and deployment",
+            "Deployed using Netlify"
+        ],
+        "link": "https://github.com/The-begining/react_test.git"
+        }
+    ]

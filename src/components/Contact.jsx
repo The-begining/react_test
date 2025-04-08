@@ -5,8 +5,6 @@ const Contact = () => (
   <section id="contact" className="contact" data-aos="fade-up">
     <h2>Contact</h2>
     <p><strong>Email:</strong> softengg.shubham@gmail.com</p>
-    <p><strong>Phone:</strong> 96684013</p>
-    <p><strong>Location:</strong> Tunlandvegen 42, Dal, Norway</p>
     <div className="links">
       <a href="https://linkedin.com" target="_blank">LinkedIn</a>
       <a href="https://github.com/The-begining" target="_blank">GitHub</a>

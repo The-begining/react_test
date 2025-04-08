@@ -1,13 +1,80 @@
 .projects {
-    padding: 3rem;
-    background-color: #fff;
-  }
-  .projects h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  .projects ul li {
-    margin-bottom: 1rem;
-  }
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
 
-  
+.projects h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card h3 {
+  font-size: 1.25rem;
+  color: #007acc;
+  margin-bottom: 0.5rem;
+}
+
+.project-card .course {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.tech-tags {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  background: #e0f3ff;
+  color: #007acc;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
+.view-btn {
+  margin-top: auto;
+  background-color: #00c6ff;
+  color: white;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #009fd8;
+}
+
+.achievement-list {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.achievement-list li {
+  margin-bottom: 0.3rem;
+  list-style-type: disc;
+}
