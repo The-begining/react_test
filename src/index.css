@@ -5,6 +5,7 @@
   --olive: #58641d;    /* muted moss green */
   --pale: #d0e3c4;     /* pale soft green */
   --nearwhite: #f7fded;/* near-white green tint */
+  --navbar-height: 72px; /* used to offset fixed navbar */
 }
 
 /* Base typography and background */
@@ -34,5 +35,17 @@ body {
   color: inherit;
   font-size: 1.3rem;
   cursor: pointer;
+}
+
+.fleur-de-leah-regular {
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rochester-regular {
+  font-family: "Rochester", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 

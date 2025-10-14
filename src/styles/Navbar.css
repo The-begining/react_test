@@ -13,9 +13,11 @@
   }
   
   .navbar-brand {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.4rem;
+    font-weight: 700;
     letter-spacing: 1px;
+    font-family: inherit;
+    color: #ffffff;
   }
   
   .navbar-links {
@@ -33,5 +35,22 @@
   
   .navbar-links li a:hover {
     color: var(--pale);
+  }
+
+  /* Keep colors consistent in dark mode */
+  .dark .navbar-brand {
+    color: #ffffff;
+  }
+
+  /* Resume button like CTA */
+  .resume-btn {
+    background-color: var(--burgundy);
+    color: var(--nearwhite) !important;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+  }
+  .resume-btn:hover {
+    color: var(--nearwhite) !important;
+    background-color: #6f1717;
   }
   

@@ -10,6 +10,7 @@ import Education from './components/Education';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import LinkedInPosts from './components/LinkedInPosts';
 import Certifications from './components/Certfications';
 import Contact from './components/Contact';
 import Counter from './components/Counter';
@@ -29,6 +30,7 @@ const App = () => {
         <Experience />
         <Skills />
         <Projects />
+        <LinkedInPosts />
         <Certifications />
         <Contact />
       </div>

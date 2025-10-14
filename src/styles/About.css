@@ -17,3 +17,56 @@
   margin: 1rem auto;
   font-size: 1.1rem;
 }
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 2rem;
+  align-items: start;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-photo-wrap {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.about-photo {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 16px;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Faded edge effect */
+/* Vignette overlay */
+.about-photo-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 240px;
+  border-radius: 16px;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, rgba(0,0,0,0.5) 100%);
+  pointer-events: none;
+}
+
+.about-text p {
+  margin-left: 0;
+}
+
+@media (max-width: 800px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about-text p {
+    margin: 1rem auto;
+  }
+}

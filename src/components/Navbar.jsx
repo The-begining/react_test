@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-brand">shamimeh MN</div>
+      <div className="navbar-brand rochester-regular">Shamimeh MN</div>
       <ul className="navbar-links">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -20,9 +20,10 @@ const Navbar = () => {
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#posts">Posts</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href={CVPdf} target="_blank" rel="noopener noreferrer" download>Resume</a></li>
+        <li><a href={CVPdf} target="_blank" rel="noopener noreferrer" download className="resume-btn">Resume</a></li>
       </ul>
       <button onClick={() => setDarkMode(!darkMode)} className="toggle-btn">
         {darkMode ? '🌞' : '🌙'}

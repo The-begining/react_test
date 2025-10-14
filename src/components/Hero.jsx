@@ -20,14 +20,7 @@ const Hero = () => {
   return (
     <section id="hero" className="hero">
       <div className="hero-content">
-        <motion.img
-          src="/profile.jpg"
-          alt="Shamimeh Mohajeri Nav"
-          className="profile-pic"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        />
+        {/* profile image removed from hero as requested */}
 
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
