@@ -4,7 +4,7 @@
   justify-content: center;
   text-align: center;
   height: 100vh;
-  background: linear-gradient(120deg, var(--ink), var(--olive));
+  background: linear-gradient(120deg, rgba(0, 36, 0, 0.7), rgba(88, 100, 29, 0.6)), url('/xingye.jpg') center / cover no-repeat fixed;
   color: var(--nearwhite);
   padding: 2rem;
 }
@@ -12,6 +12,10 @@
 .hero-content {
   max-width: 800px;
   animation: fadeIn 2s ease-in-out;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 1.5rem;
+  backdrop-filter: blur(6px);
 }
 
 .hero h1 {
@@ -47,6 +51,15 @@
   background-color: #6f1717; /* darker burgundy */
   transform: scale(1.05);
 }
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--pale);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1rem;
+}
 .final-titles {
   margin: 1rem 0;
   display: flex;
@@ -72,6 +85,24 @@
   to {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+/* Dark mode adjustments */
+.dark .hero {
+  background: linear-gradient(120deg, rgba(13, 17, 23, 0.8), rgba(22, 27, 34, 0.7)), url('/xingye.jpg') center / cover no-repeat fixed;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+  .hero h2 {
+    font-size: 1.3rem;
+  }
+  .profile-pic {
+    width: 110px;
+    height: 110px;
   }
 }
 
