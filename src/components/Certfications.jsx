@@ -5,9 +5,14 @@ const Certifications = () => (
   <section id="certifications" className="certifications" data-aos="fade-up">
     <h2>Certifications</h2>
     <ul>
-      <li>JavaScript Essential Training — LinkedIn Learning</li>
-      <li>Python (Code in Place) — Stanford University</li>
-      <li>42 Wolfsburg Piscine — Systems Programming in C</li>
+      <li>Introduction to Machine Learning — Duke University</li>
+      <li>Neural Networks and Deep Learning — DeepLearning.AI</li>
+      <li>Improving Deep NN: Hyperparameter Tuning, Regularization and Optimization — DeepLearning.AI</li>
+      <li>Supervised Machine Learning: Regression and Classification — DeepLearning.AI</li>
+      <li>Introduction to Intel Distribution of OpenVINO toolkit for Computer Vision Applications — Intel</li>
+      <li>Introduction to Big Data with Spark and Hadoop — IBM</li>
+      <li>Intro to Managing Resources Using Infrastructure-as-Code — Codio</li>
+      <li>Network Principal (Network+) — Abolfazl Kazemi, Maktabkhooneh</li>
     </ul>
   </section>
 );
