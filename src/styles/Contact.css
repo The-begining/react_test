@@ -1,6 +1,6 @@
 .contact {
     padding: 3rem;
-    background-color: #e1f5fe;
+    background-color: var(--nearwhite);
   }
   .contact h2 {
     font-size: 2rem;
@@ -11,7 +11,7 @@
   }
   .contact .links a {
     margin-right: 1.5rem;
-    color: #0077cc;
+    color: var(--olive);
     text-decoration: none;
   }
   .contact .links a:hover {

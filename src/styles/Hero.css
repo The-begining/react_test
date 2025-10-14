@@ -4,8 +4,8 @@
   justify-content: center;
   text-align: center;
   height: 100vh;
-  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-  color: #ffffff;
+  background: linear-gradient(120deg, var(--ink), var(--olive));
+  color: var(--nearwhite);
   padding: 2rem;
 }
 
@@ -24,7 +24,7 @@
   font-size: 1.8rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
-  color: #aad8d3;
+  color: var(--pale);
 }
 
 .hero p {
@@ -35,8 +35,8 @@
 
 .cta-button {
   padding: 0.8rem 1.6rem;
-  background-color: #00c6ff;
-  color: white;
+  background-color: var(--burgundy);
+  color: var(--nearwhite);
   font-weight: bold;
   border-radius: 25px;
   text-decoration: none;
@@ -44,7 +44,7 @@
 }
 
 .cta-button:hover {
-  background-color: #009ee3;
+  background-color: #6f1717; /* darker burgundy */
   transform: scale(1.05);
 }
 .final-titles {
@@ -56,11 +56,11 @@
 }
 
 .title-badge {
-  background: #00c6ff;
+  background: var(--pale);
   padding: 0.4rem 1rem;
   border-radius: 20px;
   font-weight: 600;
-  color: #fff;
+  color: var(--ink);
   animation: fadeInBadge 0.4s ease-in;
 }
 

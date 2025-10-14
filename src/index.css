@@ -1,0 +1,38 @@
+/* Global color palette */
+:root {
+  --burgundy: #8b1e1e; /* deep burgundy red */
+  --ink: #002400;      /* very dark green */
+  --olive: #58641d;    /* muted moss green */
+  --pale: #d0e3c4;     /* pale soft green */
+  --nearwhite: #f7fded;/* near-white green tint */
+}
+
+/* Base typography and background */
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--nearwhite);
+  color: var(--ink);
+}
+
+.dark {
+  background-color: var(--ink);
+  color: var(--nearwhite);
+}
+
+.dark .navbar {
+  background-color: var(--ink);
+}
+
+.toggle-btn {
+  margin-left: 1rem;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+

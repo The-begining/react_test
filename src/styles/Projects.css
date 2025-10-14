@@ -1,6 +1,6 @@
 .projects {
   padding: 4rem 2rem;
-  background-color: #f9f9f9;
+  background-color: var(--nearwhite);
 }
 
 .projects h2 {
@@ -16,7 +16,7 @@
 }
 
 .project-card {
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
@@ -26,7 +26,7 @@
 
 .project-card h3 {
   font-size: 1.25rem;
-  color: #007acc;
+  color: var(--olive);
   margin-bottom: 0.5rem;
 }
 
@@ -45,8 +45,8 @@
 }
 
 .tag {
-  background: #e0f3ff;
-  color: #007acc;
+  background: var(--pale);
+  color: var(--ink);
   font-size: 0.75rem;
   padding: 4px 8px;
   border-radius: 20px;
@@ -54,8 +54,8 @@
 
 .view-btn {
   margin-top: auto;
-  background-color: #00c6ff;
-  color: white;
+  background-color: var(--burgundy);
+  color: var(--nearwhite);
   text-align: center;
   padding: 0.5rem 1rem;
   border-radius: 6px;
@@ -64,7 +64,7 @@
 }
 
 .view-btn:hover {
-  background-color: #009fd8;
+  background-color: #6f1717;
 }
 
 .achievement-list {

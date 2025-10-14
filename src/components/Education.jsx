@@ -6,16 +6,12 @@ const Education = () => (
     <h2>Education</h2>
     <ul>
       <li>
-        <strong>Master’s in Data Science</strong><br />
-        OsloMet University, Oslo — Aug 2023–Present
+        <strong>MSc ACIT – Applied Artificial Intelligence</strong><br />
+        Oslo Metropolitan University, Oslo — Aug 2023 – Jun 2025
       </li>
       <li>
-        <strong>Bachelor of Technology</strong><br />
-        AKGEC, Ghaziabad — Sep 2009–Sep 2012
-      </li>
-      <li>
-        <strong>Diploma in IT</strong><br />
-        Govt. Polytechnic, Ghaziabad — Jun 2006–Jun 2009
+        <strong>Bachelor’s in Computer Science</strong><br />
+        University of Isfahan, Iran — Sep 2017 – Mar 2022
       </li>
     </ul>
   </section>

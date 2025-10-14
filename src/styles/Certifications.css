@@ -1,10 +1,11 @@
 .certifications {
     padding: 3rem;
-    background-color: #f4f4f4;
+    background-color: var(--pale);
   }
   .certifications h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: var(--olive);
   }
   .certifications ul li {
     margin-bottom: 0.8rem;

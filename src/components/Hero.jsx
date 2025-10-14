@@ -4,7 +4,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
-  const titles = ['React Developer', 'ML Engineer', 'Wix Consultant', 'Data Analyst'];
+  const titles = ['Researcher', 'AI Developer'];
   const [typedTitles, setTypedTitles] = useState([]);
   const [currentWord, setCurrentWord] = useState('');
 
@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="hero-content">
         <motion.img
           src="/profile.jpg"
-          alt="Shubham Singh"
+          alt="Shamimeh Mohajeri Nav"
           className="profile-pic"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -34,7 +34,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
         >
-          Shubham Singh
+          Shamimeh Mohajeri Nav
         </motion.h1>
 
         <motion.h2
@@ -78,7 +78,7 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 2.5, duration: 1 }}
         >
-          Building smart systems and AI-powered tools that solve real-world problems.
+          Building AI-driven solutions through research and development.
         </motion.p>
 
         <motion.a
