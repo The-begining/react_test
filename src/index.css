@@ -39,6 +39,9 @@ body {
   cursor: pointer;
 }
 
+/* AOS fallback: ensure sections are visible even if animation class not applied yet */
+[data-aos] { opacity: 1 !important; transform: none !important; }
+
 .fleur-de-leah-regular {
   font-family: "Fleur De Leah", cursive;
   font-weight: 400;

@@ -18,9 +18,11 @@
     letter-spacing: 1px;
     font-family: inherit;
     color: #ffffff;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
   
-  .navbar-left { display: flex; align-items: center; gap: 0.75rem; }
+  .navbar-left { display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0; }
   .navbar-right { display: flex; align-items: center; gap: 1rem; margin-left: auto; }
   .navbar-links { list-style: none; display: flex; gap: 1rem; }
   .toggle-btn { font-size: 1.3rem; color: var(--nearwhite); background: transparent; border: none; cursor: pointer; }
