@@ -1,6 +1,7 @@
 import React , {useState, useEffect}from 'react';
-import '../styles/Navbar.css';
+import { Link } from 'react-router-dom';
 import CVPdf from '../../CV/CV-Shamimeh.pdf';
+import '../styles/Navbar.css';
 
 
 const Navbar = () => {
@@ -12,22 +13,21 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-brand rochester-regular">Shamimeh MN</div>
-      <ul className="navbar-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#posts">Posts</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href={CVPdf} target="_blank" rel="noopener noreferrer" download className="resume-btn">Resume</a></li>
-      </ul>
-      <button onClick={() => setDarkMode(!darkMode)} className="toggle-btn">
-        {darkMode ? '🌞' : '🌙'}
-      </button>
+      <div className="navbar-left">
+        <button onClick={() => setDarkMode(!darkMode)} className="toggle-btn" aria-label="Toggle theme">
+          {darkMode ? '🌞' : '🌙'}
+        </button>
+        <div className="navbar-brand rochester-regular">Shamimeh MN</div>
+      </div>
+      <div className="navbar-right">
+        <ul className="navbar-links">
+          <li><Link to="/">Home</Link></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><Link to="/forest">Forest</Link></li>
+        </ul>
+        <a href={CVPdf} download className="cta-button nav-cv">CV</a>
+      </div>
     </nav>
   );
 };

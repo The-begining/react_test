@@ -11,12 +11,14 @@
 /* Base typography and background */
 html, body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Inter', sans-serif;
   background: var(--nearwhite);
   color: var(--ink);
+  margin: 0;
 }
 
 .dark {

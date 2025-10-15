@@ -20,11 +20,10 @@
     color: #ffffff;
   }
   
-  .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
+  .navbar-left { display: flex; align-items: center; gap: 0.75rem; }
+  .navbar-right { display: flex; align-items: center; gap: 1rem; margin-left: auto; }
+  .navbar-links { list-style: none; display: flex; gap: 1rem; }
+  .toggle-btn { font-size: 1.3rem; color: var(--nearwhite); background: transparent; border: none; cursor: pointer; }
   
   .navbar-links li a {
     color: var(--nearwhite);
@@ -42,15 +41,6 @@
     color: #ffffff;
   }
 
-  /* Resume button like CTA */
-  .resume-btn {
-    background-color: var(--burgundy);
-    color: var(--nearwhite) !important;
-    padding: 0.45rem 0.9rem;
-    border-radius: 999px;
-  }
-  .resume-btn:hover {
-    color: var(--nearwhite) !important;
-    background-color: #6f1717;
-  }
+  /* CV button styled like hero CTA */
+  .nav-cv { padding: 0.6rem 1.2rem; border-radius: 25px; }
   

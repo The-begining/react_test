@@ -1,0 +1,17 @@
+.mushroom-easter-egg {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 0 5px #58641d);
+  z-index: 1000;
+}
+
+.mushroom-easter-egg:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px #8b1e1e);
+}
+
+
