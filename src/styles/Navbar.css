@@ -24,19 +24,64 @@
   }
   
   .navbar-left { display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0; }
-  .navbar-right { display: flex; align-items: center; gap: 1rem; margin-left: auto; }
-  .navbar-links { list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0; }
+  .navbar-right {
+    display: flex;
+    justify-content: flex-end; /* push all content to the right */
+    align-items: center;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+    overflow: hidden; /* optional: avoid scrollbar issues */
+    gap: 0rem; /* space between nav items */
+    white-space: nowrap;
+    padding-right: 5rem; /* add right padding */
+  }
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem; /* space between all nav items */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap; /* never wrap, force single line */
+    white-space: nowrap;
+  }
+  .navbar-links li {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-links .nav-cv {
+    margin: 0; /* remove any default margin */
+    padding: 0.4rem 1.1rem !important; /* make cta-button blend better */
+    border-radius: 25px;
+    font-size: 1rem;
+    vertical-align: middle;
+    line-height: normal;
+  }
   .toggle-btn { font-size: 1.3rem; color: var(--nearwhite); background: transparent; border: none; cursor: pointer; line-height: 1; }
   
   .navbar-links li a {
     color: var(--nearwhite);
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: 
+      color 0.3s ease,
+      border 0.2s;
+    border: 2px solid transparent;
+    border-radius: 18px;
+    padding: 0.25rem 0.65rem;
   }
-  
-  .navbar-links li a:hover {
+
+  /* Exclude contact button from special hover border */
+  .navbar-links li a.cta-button,
+  .navbar-links li .cta-button {
+    border: none !important;
+    padding: 0.4rem 1.1rem !important;
+    border-radius: 25px;
+  }
+
+  .navbar-links li a:not(.cta-button):hover {
     color: var(--pale);
+    border: 2px solid var(--olive, #556b2f);
+    background: transparent;
   }
 
   /* Keep colors consistent in dark mode */
@@ -45,5 +90,9 @@
   }
 
   /* CV button styled like hero CTA */
-  .nav-cv { padding: 0.6rem 1.2rem; border-radius: 25px; }
+  .nav-cv { padding: 0.6rem 1.2rem; border-radius: 25px; color: #fff; background-color: #8b1e1e;}
+  .nav-cv:hover {
+    background-color: #882121; 
+    color: #fff;
+  }
   

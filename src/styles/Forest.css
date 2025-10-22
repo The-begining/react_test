@@ -3,13 +3,15 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height: 100vh;
+  /* Viewport height minus fixed navbar so content isn't hidden */
+  height: calc(100vh - var(--navbar-height));
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #f7fded;
   position: relative;
+  margin-top: var(--navbar-height);
 }
 
 .forest-overlay {

@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Forest from './pages/Forest';
+import ContactPage from './pages/ContactPage';
 
 const App = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/forest" element={<Forest />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </>
   );

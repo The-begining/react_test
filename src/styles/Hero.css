@@ -3,7 +3,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100vh;
+  /* Viewport height minus fixed navbar to avoid double gap */
+  height: calc(100vh - var(--navbar-height));
   margin-top: var(--navbar-height);
   background: linear-gradient(120deg, rgba(0, 36, 0, 0.7), rgba(88, 100, 29, 0.6)), url('/xingye.jpg');
   background-position: center top;
@@ -43,7 +44,7 @@
 
 .cta-button {
   padding: 0.8rem 1.6rem;
-  background-color: var(--burgundy);
+  background-color: #8b1e1e;
   color: var(--nearwhite);
   font-weight: bold;
   border-radius: 25px;

@@ -1,6 +1,6 @@
 .education {
     padding: 3rem;
-    background-color: #fff;
+    background-color: var(--nearwhite);
   }
   .education h2 {
     font-size: 2rem;

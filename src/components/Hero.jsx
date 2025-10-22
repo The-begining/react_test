@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Hero.css';
 import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const titles = ['Researcher', 'AI Developer'];
@@ -74,14 +75,9 @@ const Hero = () => {
           Building AI-driven solutions through research and development.
         </motion.p>
 
-        <motion.a
-          href="#contact"
-          className="cta-button"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          Let’s Connect
-        </motion.a>
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Link to="/contact" className="cta-button">Let’s Connect</Link>
+        </motion.div>
       </div>
     </section>
   );

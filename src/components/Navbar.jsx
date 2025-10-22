@@ -21,7 +21,7 @@ const Navbar = () => {
         <button onClick={() => setDarkMode(!darkMode)} className="toggle-btn" aria-label="Toggle theme">
           {darkMode ? '🌞' : '🌙'}
         </button>
-        <div className="navbar-brand rochester-regular">Shamimeh MN</div>
+        <div className="navbar-brand rochester-regular">Shamim M. Nav</div>
       </div>
       <div className="navbar-right">
         <ul className="navbar-links">
@@ -29,8 +29,10 @@ const Navbar = () => {
           <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About</a></li>
           <li><Link to="/forest">Forest</Link></li>
+          <li><Link to="/contact" className="cta-button nav-cv">Contact</Link></li>
+          <li><a href={CVPdf} download>CV</a></li>
         </ul>
-        <a href={CVPdf} download className="cta-button nav-cv">CV</a>
+
       </div>
     </nav>
   );

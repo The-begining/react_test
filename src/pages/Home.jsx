@@ -29,12 +29,12 @@ export default function Home() {
     <div className="home-container">
       <Hero />
       <About />
-      <Education />
       <Experience />
       <Skills />
+      <Education />
+      <Certifications />
       <Projects />
       <LinkedInPosts />
-      <Certifications />
       <Contact />
 
       <div className="mushroom-easter-egg" onClick={handleClick} aria-label="Enter the forest">

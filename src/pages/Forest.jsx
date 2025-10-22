@@ -13,17 +13,18 @@ export default function Forest() {
         </div>
 
         <div className="forest-content">
+          <p> 👋 Hi, I'm Shamim.  </p>
           <h1>Welcome to my forest 🍃</h1>
           <p>
-            This is the part of me you don’t see on my résumé — where my roots grow wild.
+            This is the part of me you don’t see on my CV — where my roots grow wild.
           </p>
 
           <div className="forest-fun">
-            <p>✨ Favorite things, quotes, inspirations, a little magic…</p>
+            <p>✨ Work in progress 🌱</p>
             <ul>
-              <li>🕊️ Long walks under soft rain</li>
-              <li>📚 Cozy books & warm tea</li>
-              <li>🌿 Whispering trees</li>
+              <li>weight training in gym </li>
+              <li>reading books</li>
+              <li>learning new things</li> 
             </ul>
           </div>
 
@@ -31,9 +32,12 @@ export default function Forest() {
         </div>
 
         <div className="forest-bottom">
-          <span>🍄</span>
-          <span>🍄</span>
-          <span>🍄</span>
+          <span style={{ marginRight: 'auto' }}>
+            <img src="/Mushroom1.png" alt="Mushroom" />
+          </span>
+          <span style={{ marginLeft: 'auto' }}>
+            <img src="/Mushroom3.png" alt="Mushroom" />
+          </span>
         </div>
       </div>
     </div>
