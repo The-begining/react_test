@@ -5,7 +5,7 @@
   text-align: center;
   /* Viewport height minus fixed navbar to avoid double gap */
   height: calc(100vh - var(--navbar-height));
-  margin-top: var(--navbar-height);
+  margin-top: 40px;
   background: linear-gradient(120deg, rgba(0, 36, 0, 0.7), rgba(88, 100, 29, 0.6)), url('/xingye.jpg');
   background-position: center top;
   background-size: cover;
