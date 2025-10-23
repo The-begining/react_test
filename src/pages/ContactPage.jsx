@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/ContactForm.css';
 
 const ContactPage = () => {
@@ -7,8 +7,14 @@ const ContactPage = () => {
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
+  const [status, setStatus] = useState('');
+  const [ts, setTs] = useState(0);
 
-  const handleSubmit = (e) => {
+  useEffect(() => {
+    setTs(Date.now());
+  }, []);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const hasEmail = email.trim().length > 0;
@@ -18,12 +24,21 @@ const ContactPage = () => {
       return;
     }
 
-    const subject = encodeURIComponent(`Portfolio Contact from ${name || 'Anonymous'}`);
-    const body = encodeURIComponent(
-      `Name: ${name || '—'}\nEmail: ${email || '—'}\nPhone: ${phone || '—'}\n\nMessage:\n${message || '—'}`
-    );
-
-    window.location.href = `mailto:shamimehmohajeri@gmail.com?subject=${subject}&body=${body}`;
+    setStatus('Sending...');
+    setError('');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, phone, message, source_path: window.location.pathname, _hp: '', _ts: ts })
+      });
+      if (!res.ok) throw new Error('Failed');
+      setStatus('Message sent. Thank you!');
+      setName(''); setEmail(''); setPhone(''); setMessage('');
+    } catch (err) {
+      setError('Something went wrong. Please try again later.');
+      setStatus('');
+    }
   };
 
   return (
@@ -33,8 +48,11 @@ const ContactPage = () => {
         <p>Leave your message and your email address or phone number. I will get back to you.</p>
 
         {error && <div className="form-error" role="alert">{error}</div>}
+        {status && <div className="form-status" aria-live="polite">{status}</div>}
 
         <form onSubmit={handleSubmit} noValidate>
+          {/* Honeypot field */}
+          <input type="text" name="website" autoComplete="off" style={{ display: 'none' }} tabIndex="-1" aria-hidden="true" />
           <div className="form-row">
             <label htmlFor="name">Name</label>
             <input

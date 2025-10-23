@@ -1,12 +1,39 @@
-# React + Vite
+## Portfolio (React + Netlify)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains my personal portfolio site built with React and deployed on Netlify. It showcases projects, experience, skills, and includes a contact form powered by Netlify Functions.
 
-Currently, two official plugins are available:
+### Tech stack
+- React 19
+- React Router
+- Netlify Functions (serverless API)
+- AOS animations, Bootstrap, Framer Motion
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Local development
+1. Install dependencies:
+```bash
+npm install
+```
+2. Run the dev server:
+```bash
+npm run dev
+```
+3. Optional: run with Netlify local server (to emulate Functions):
+```bash
+npm run dev:nl
+```
 
-## Expanding the ESLint configuration
+### Build
+```bash
+npm run build
+```
+The build output is generated in the `dist/` directory.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Environment variables
+- Private secrets should be stored in Netlify environment variables and accessed only in `netlify/functions/**` via `process.env`.
+- Do not prefix secrets with `VITE_`; any `VITE_` variable is public in the browser.
+
+### Deployment
+Push to the default branch; Netlify will build and deploy automatically. Branch deploys and previews are enabled.
+
+### License
+This project is for personal portfolio use. Content © the site owner.

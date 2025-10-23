@@ -1,18 +1,22 @@
 {
-  "name": "first",
+  "name": "portfolio-react",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Personal portfolio website built with React and deployed on Netlify.",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:nl": "netlify dev",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview --open"
   },
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^5.3.5",
     "framer-motion": "^12.6.3",
+    "isbot": "^5.1.18",
+    "@supabase/supabase-js": "^2.48.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^6.30.1",
