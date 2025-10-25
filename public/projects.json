@@ -1,5 +1,28 @@
     [
         {
+            "title": "Calibrating Dementia Diagnosis: Adapting a DINO Transformer to 3D EEG with Conformal Prediction",
+            "description": "Developed a deep learning pipeline that adapts a 2D DINO-pretrained Vision Transformer to 3D EEG data for dementia and MCI classification, integrating Conformal Prediction to quantify model uncertainty.",
+            "techStack": [
+                "PyTorch Lightning",
+                "Vision Transformer (ViT3D)",
+                "DINO Pretraining",
+                "Conformal Prediction",
+                "Split-Conformal",
+                "EEG Signal Processing",
+                "NumPy",
+                "Matplotlib"
+            ],
+            "achievements": [
+                "Adapted 2D DINO-pretrained Vision Transformer weights to 3D EEG data using weight inflation and positional embedding interpolation",
+                "Implemented margin-based, cumulative, and log-conformal prediction methods for uncertainty quantification",
+                "Achieved 75% accuracy and 0.74 F1-score with the DINO-pretrained model, outperforming the baseline model trained from scratch by 13%",
+                "Demonstrated that margin-based conformal prediction reduced dementia false negatives from 14 to 2, while maintaining calibrated coverage",
+                "Visualized coverage–efficiency trade-offs and prediction sets for uncertainty analysis in medical classification",
+                "Thesis completed under ACIT5900 (Master’s in Data Science, OsloMet) with focus on trustworthy AI for healthcare"
+            ],
+            "link": "https://github.com/The-begining/vit3d_with_weight_inflation_and_conformal_prediction.git"
+        },        
+        {
             "title": "Sentiment Analysis on Amazon Reviews",
             "description": "Compared performance of LSTM, BERT, and a custom Transformer model for binary sentiment classification on Amazon product reviews.",
             "techStack": ["LSTM", "BERT", "Transformer", "FastText", "Preprocessing"],

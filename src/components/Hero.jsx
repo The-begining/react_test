@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Hero.css';
 import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
+import profilePic from '../assets/ChatGPT Image Oct 25, 2025, 01_04_15 PM.png';
 
 const Hero = () => {
   const titles = ['React Developer', 'ML Engineer', 'Wix Consultant', 'Data Analyst'];
@@ -21,7 +22,7 @@ const Hero = () => {
     <section id="hero" className="hero">
       <div className="hero-content">
         <motion.img
-          src="/profile.jpg"
+          src={profilePic}
           alt="Shubham Singh"
           className="profile-pic"
           initial={{ opacity: 0, y: -20 }}

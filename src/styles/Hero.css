@@ -3,65 +3,159 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100vh;
-  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-  color: #ffffff;
-  padding: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 2rem 4rem;
+}
+
+/* Animated Background Elements */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 198, 255, 0.1) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .hero-content {
-  max-width: 800px;
-  animation: fadeIn 2s ease-in-out;
+  max-width: 900px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1s ease-out;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid var(--primary-color);
+  box-shadow: 0 0 30px rgba(0, 198, 255, 0.5), 
+              0 0 60px rgba(0, 198, 255, 0.3);
+  margin-bottom: 2rem;
+  object-fit: cover;
+  animation: float 6s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 198, 255, 0.6);
 }
 
 .hero h1 {
-  font-size: 3.5rem;
-  margin-bottom: 0.5rem;
-  letter-spacing: 1px;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff 0%, var(--primary-color) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeInUp 1.2s ease-out 0.2s both;
 }
 
 .hero h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 400;
-  margin-bottom: 1.5rem;
-  color: #aad8d3;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+  animation: fadeInUp 1.2s ease-out 0.4s both;
 }
 
 .hero p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 1.2s ease-out 0.6s both;
 }
 
 .cta-button {
-  padding: 0.8rem 1.6rem;
-  background-color: #00c6ff;
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
   color: white;
-  font-weight: bold;
-  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 50px;
   text-decoration: none;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
+  animation: fadeInUp 1.2s ease-out 0.8s both;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.cta-button:hover::before {
+  width: 300px;
+  height: 300px;
 }
 
 .cta-button:hover {
-  background-color: #009ee3;
-  transform: scale(1.05);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(0, 198, 255, 0.6);
 }
+
+.cta-button:active {
+  transform: translateY(-1px);
+}
+
 .final-titles {
-  margin: 1rem 0;
+  margin: 2rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
+  animation: fadeInUp 1.2s ease-out 1s both;
 }
 
 .title-badge {
-  background: #00c6ff;
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
+  background: rgba(0, 198, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 198, 255, 0.3);
   font-weight: 600;
-  color: #fff;
-  animation: fadeInBadge 0.4s ease-in;
+  color: var(--primary-color);
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  animation: fadeInBadge 0.5s ease-in;
+}
+
+.title-badge:hover {
+  background: rgba(0, 198, 255, 0.25);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
 }
 
 @keyframes fadeInBadge {
@@ -72,6 +166,45 @@
   to {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 5rem 1.5rem 3rem;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .cta-button {
+    padding: 0.85rem 2rem;
+    font-size: 1rem;
   }
 }
 

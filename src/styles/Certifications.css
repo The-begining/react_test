@@ -1,12 +1,72 @@
 .certifications {
-    padding: 3rem;
-    background-color: #f4f4f4;
+  padding: 6rem 2rem;
+  background: var(--bg-dark);
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.certifications::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--primary-color) 50%, 
+    transparent 100%);
+}
+
+.certifications h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.certifications h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: 2px;
+}
+
+.certifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.certifications ul li {
+  padding: 1rem 0;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.1rem;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.certifications ul li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .certifications {
+    padding: 4rem 1.5rem;
   }
+  
   .certifications h2 {
     font-size: 2rem;
-    margin-bottom: 1rem;
   }
-  .certifications ul li {
-    margin-bottom: 0.8rem;
-  }
+}
   

@@ -4,12 +4,14 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import Navbar from './components/Navbar';
+import FloatingNav from './components/FloatingNav';
 import Hero from './components/Hero';
 import About from './components/About';
 import Education from './components/Education';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Hackathons from './components/Hackathons';
 import Certifications from './components/Certfications';
 import Contact from './components/Contact';
 import Counter from './components/Counter';
@@ -22,6 +24,7 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <FloatingNav />
       <div className="app-container">
         <Hero />
         <About />
@@ -29,6 +32,7 @@ const App = () => {
         <Experience />
         <Skills />
         <Projects />
+        <Hackathons />
         <Certifications />
         <Contact />
       </div>

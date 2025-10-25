@@ -4,11 +4,37 @@ import '../styles/Skills.css';
 const Skills = () => (
   <section id="skills" className="skills" data-aos="fade-up">
     <h2>Skills</h2>
-    <ul>
-      <li>JavaScript, Python, Git, GitHub, GitLab CI/CD</li>
-      <li>Docker, OpenStack, Wix Development</li>
-      <li>Machine Learning, Deep Learning, NeRF Models</li>
-    </ul>
+    <div className="skills-container">
+      <div className="skill-category">
+        <h3>🧠 AI & Machine Learning</h3>
+        <p>Deep Learning (CNN, ViT, Transformer, BERT), NLP, Computer Vision, Conformal Prediction, PyTorch Lightning</p>
+      </div>
+      
+      <div className="skill-category">
+        <h3>📊 Data Science & Analytics</h3>
+        <p>Statistical Modelling, Feature Engineering, Time-Series Forecasting, PCA, EDA, Visualization (Matplotlib, Seaborn, Power BI)</p>
+      </div>
+      
+      <div className="skill-category">
+        <h3>💻 Programming & Tools</h3>
+        <p>Python, R, SQL, JavaScript, FastAPI, scikit-learn, Docker, GitLab CI/CD, OpenStack, Nginx</p>
+      </div>
+      
+      <div className="skill-category">
+        <h3>⚙️ Systems & Deployment</h3>
+        <p>Model Deployment (FastAPI + Docker), MLOps, GPU Optimization, API Design, Database Integration (PostgreSQL, SQLite)</p>
+      </div>
+      
+      <div className="skill-category">
+        <h3>🌐 Web & DevOps</h3>
+        <p>React, HTML/CSS, Sanity CMS, Wix Integrations, GitLab Unleash Feature Flags</p>
+      </div>
+      
+      <div className="skill-category">
+        <h3>🧩 Professional & Research</h3>
+        <p>Technical Documentation, Teaching & Mentorship, Design Thinking, Ethical AI, Cross-disciplinary Collaboration</p>
+      </div>
+    </div>
   </section>
 );
 

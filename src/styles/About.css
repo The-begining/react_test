@@ -1,19 +1,71 @@
 .about {
-  padding: 4rem 2rem;
-  background-color: #ffffff;
-  color: #333;
-  line-height: 1.7;
-  text-align: center;
+  padding: 6rem 2rem;
+  background: var(--bg-dark);
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .about h2 {
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  color: #111;
+  margin-bottom: 3rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.about h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: 2px;
 }
 
 .about p {
-  max-width: 800px;
-  margin: 1rem auto;
   font-size: 1.1rem;
+  line-height: 1.9;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+/* Decorative gradient line */
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--primary-color) 50%, 
+    transparent 100%);
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 4rem 1.5rem;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+  }
+  
+  .about p {
+    font-size: 1rem;
+  }
 }

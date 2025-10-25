@@ -6,8 +6,8 @@ const Education = () => (
     <h2>Education</h2>
     <ul>
       <li>
-        <strong>Master’s in Data Science</strong><br />
-        OsloMet University, Oslo — Aug 2023–Present
+        <strong>Master's in Data Science</strong><br />
+        OsloMet University, Oslo — Aug 2023–2025
       </li>
       <li>
         <strong>Bachelor of Technology</strong><br />
