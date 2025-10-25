@@ -17,7 +17,7 @@ const Skills = () => (
       
       <div className="skill-category">
         <h3>💻 Programming & Tools</h3>
-        <p>Python, R, SQL, JavaScript, FastAPI, scikit-learn, Docker, GitLab CI/CD, OpenStack, Nginx</p>
+        <p>Python, JavaScript (Node.js, React), R, SQL, FastAPI, scikit-learn, Docker, OpenStack, Nginx</p>
       </div>
       
       <div className="skill-category">
@@ -27,7 +27,7 @@ const Skills = () => (
       
       <div className="skill-category">
         <h3>🌐 Web & DevOps</h3>
-        <p>React, HTML/CSS, Sanity CMS, Wix Integrations, GitLab Unleash Feature Flags</p>
+        <p>React, JavaScript (ES6+), HTML/CSS, Wix Custom Development (JavaScript), Sanity CMS, GitLab CI/CD, GitLab Unleash Feature Flags</p>
       </div>
       
       <div className="skill-category">

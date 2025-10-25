@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import profilePic from '../assets/ChatGPT Image Oct 25, 2025, 01_04_15 PM.png';
 
 const Hero = () => {
-  const titles = ['React Developer', 'ML Engineer', 'Wix Consultant', 'Data Analyst'];
+  const titles = ['React Developer', 'ML Engineer', 'Frontend Developer', 'Data Analyst'];
   const [typedTitles, setTypedTitles] = useState([]);
   const [currentWord, setCurrentWord] = useState('');
 
