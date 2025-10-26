@@ -50,7 +50,7 @@ const Hackathons = () => (
         <p className="theme">Sustainability & Carbon Accounting</p>
         <p className="project">Carbon Tax Visualization Tool</p>
         <ul className="highlights">
-          <li>Built a data visualization dashboard to calculate and simulate port emissions and tax impacts</li>
+          <li>Built a Framework to calculate and simulate port emissions and tax impacts</li>
           <li>Used geospatial and emissions data to present actionable sustainability insights</li>
         </ul>
       </div>
